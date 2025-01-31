@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const postSchema = new  Schema(
+const postSchema = new Schema(
     {
         title: String,
         img: String,
