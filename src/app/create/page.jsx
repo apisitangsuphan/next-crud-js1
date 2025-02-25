@@ -18,7 +18,7 @@ function CreatePostPage() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/api/posts", {
+      const res = await fetch("/api/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,6 +35,7 @@ function CreatePostPage() {
     } catch (err) {
       console.log(err);
     }
+    
   };
 
   return (

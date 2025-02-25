@@ -7,5 +7,5 @@ export async function POST(req){
     console.log(title, img, content)
     await connectMongoDB();
     await Post.create({title, img, content})
-    return NextResponse({message: "Post Created"},{status: 201})
+    return NextResponse.json({message: "Post Created"},{status: 201})
 }
